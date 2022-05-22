@@ -1,12 +1,15 @@
-const express = require('express');
-const router = express.Router();
-
+const express = require('express')
+const router = express.Router()
 const urlController = require('../controller/urlController')
 
 
 
-router.post("/url/shorten",urlController.creatUrl )
+router.post('/url/shorten', urlController.createShortUrl)
 
-router.get("/:urlcode", urlController.getUrl )
+router.get ('/:urlCode',urlController.getUrl)
 
-module.exports = router;
+
+
+
+
+module.exports = router
